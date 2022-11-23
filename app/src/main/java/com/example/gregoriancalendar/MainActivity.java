@@ -26,6 +26,6 @@ TextView textView;
 //                + gcal.get(Calendar.MINUTE) + ":"
                 + gcal.get(Calendar.SECOND));
         textView.setText("Time :"+times);
-
+//
     }
 }
