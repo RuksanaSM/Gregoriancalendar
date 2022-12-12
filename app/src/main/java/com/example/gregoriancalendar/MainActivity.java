@@ -2,6 +2,7 @@ package com.example.gregoriancalendar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -23,9 +24,9 @@ TextView textView;
         GregorianCalendar gcal = new GregorianCalendar();
 
         String times= (gcal.get(Calendar.HOUR_OF_DAY)+ ":"
-//                + gcal.get(Calendar.MINUTE) + ":"
+                + gcal.get(Calendar.MINUTE) + ":"
                 + gcal.get(Calendar.SECOND));
-        textView.setText("Time :"+times);
-//
+//        textView.setText("Time :"+times);
+        textView.setText("GregorianCalendar Time :"+times);
     }
 }
